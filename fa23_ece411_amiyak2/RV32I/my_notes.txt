@@ -1,0 +1,6 @@
+
+makes my log:
+[amiyak2@eceb-2022-06 mp2]$ make run PROG=testcode/riscv_mp2test.s 
+
+makes golden log:
+[amiyak2@eceb-2022-06 mp2]$ make spike ELF=sim/bin/riscv_mp2test.elf 

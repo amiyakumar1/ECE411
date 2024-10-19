@@ -1,0 +1,7 @@
+[student_testbench] Passed 8 of 8 evict covers
+[student_testbench] Passed 8 of 8 hits covers
+[student_testbench] Passed 1 of 1 Write-Write to same Key in Consecutive Cycles Cover
+[student_testbench] Passed 1 of 1 Write-Read to same Key in Consecutive Cycles Cover
+[student_testbench] 0 False Positive Read Errors
+[student_testbench] 0 False Negative Read Errors
+[provided_dut] DUT passed verification

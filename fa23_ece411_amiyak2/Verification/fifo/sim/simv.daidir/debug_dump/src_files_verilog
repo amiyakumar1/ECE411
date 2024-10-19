@@ -1,0 +1,7 @@
+/home/amiyak2/mp1/fifo/grader/mock_grader.sv
+/home/amiyak2/mp1/fifo/hdl/fifo.sv
+/home/amiyak2/mp1/fifo/hdl/fifo_itf.sv
+/home/amiyak2/mp1/fifo/hvl/testbench.sv
+/home/amiyak2/mp1/fifo/hvl/top.sv
+/home/amiyak2/mp1/fifo/pkg/design_types.sv
+/home/amiyak2/mp1/fifo/pkg/grader_types.sv

@@ -1,0 +1,48 @@
+simSetSimulator "-vcssv" -exec "/home/amiyak2/mp1/fifo/sim/simv" -args
+debImport "-dbdir" "/home/amiyak2/mp1/fifo/sim/simv.daidir"
+debLoadSimResult /home/amiyak2/mp1/fifo/sim/dump.fsdb
+wvCreateWindow
+srcHBDrag -win $_nTrace1
+wvAddSignal -win $_nWave2 "top/tb/itf/stu_errors"
+wvRenameGroup -win $_nWave2 {G1} {tb}
+wvAddSignal -win $_nWave2 "/top/tb/itf/clk" "/top/tb/itf/reset_n" \
+           "/top/tb/itf/valid_i" "/top/tb/itf/valid_o" "/top/tb/itf/yumi" \
+           "/top/tb/itf/rdy" "/top/tb/itf/data_i\[7:0\]" \
+           "/top/tb/itf/data_o\[7:0\]" "/top/tb/itf/timestamp\[63:0\]"
+wvSetPosition -win $_nWave2 {("tb" 0)}
+wvSetPosition -win $_nWave2 {("tb" 9)}
+wvSetPosition -win $_nWave2 {("tb" 9)}
+wvSetPosition -win $_nWave2 {("tb" 0)}
+wvSetPosition -win $_nWave2 {("tb" 0)}
+wvSetPosition -win $_nWave2 {("tb/itf(fifo_itf)" 0)}
+wvAddSubGroup -win $_nWave2 -holdpost {itf(fifo_itf)}
+wvAddSignal -win $_nWave2 "top/tb/itf/stu_errors"
+wvAddSignal -win $_nWave2 "/top/tb/itf/clk" "/top/tb/itf/reset_n" \
+           "/top/tb/itf/valid_i" "/top/tb/itf/valid_o" "/top/tb/itf/yumi" \
+           "/top/tb/itf/rdy" "/top/tb/itf/data_i\[7:0\]" \
+           "/top/tb/itf/data_o\[7:0\]" "/top/tb/itf/timestamp\[63:0\]"
+wvSetPosition -win $_nWave2 {("tb/itf(fifo_itf)" 0)}
+wvSetPosition -win $_nWave2 {("tb/itf(fifo_itf)" 9)}
+wvSetPosition -win $_nWave2 {("tb" 0)}
+wvSetPosition -win $_nWave2 {("tb" 19)}
+wvSelectSignal -win $_nWave2 {( "tb/itf(fifo_itf)" 7 )} 
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvSetCursor -win $_nWave2 267993.482522 -snap {("itf(fifo_itf)" 3)}
+wvSetCursor -win $_nWave2 269020.983162 -snap {("itf(fifo_itf)" 4)}
+wvSetCursor -win $_nWave2 525292.643350 -snap {("itf(fifo_itf)" 3)}
+wvSetCursor -win $_nWave2 524613.758999 -snap {("itf(fifo_itf)" 6)}
+wvSetCursor -win $_nWave2 268083.516976 -snap {("itf(fifo_itf)" 7)}
+wvSetCursor -win $_nWave2 266780.792951 -snap {("itf(fifo_itf)" 6)}
+wvSetCursor -win $_nWave2 262447.684497 -snap {("itf(fifo_itf)" 4)}
+wvSetCursor -win $_nWave2 12826.598418 -snap {("itf(fifo_itf)" 4)}
+wvSelectSignal -win $_nWave2 {( "tb/itf(fifo_itf)" 4 )} 
+wvSetCursor -win $_nWave2 524560.590278 -snap {("itf(fifo_itf)" 4)}
+wvSetCursor -win $_nWave2 525514.698015 -snap {("itf(fifo_itf)" 4)}
+wvSetCursor -win $_nWave2 524505.545601 -snap {("itf(fifo_itf)" 4)}
+wvSetCursor -win $_nWave2 525000.947695 -snap {("itf(fifo_itf)" 3)}
+wvSetCursor -win $_nWave2 524450.500924 -snap {("itf(fifo_itf)" 4)}
+wvSetCursor -win $_nWave2 525496.349789 -snap {("itf(fifo_itf)" 4)}
+wvSetCursor -win $_nWave2 524560.590278 -snap {("itf(fifo_itf)" 4)}
+wvSetCursor -win $_nWave2 525312.867532 -snap {("itf(fifo_itf)" 4)}
+debExit

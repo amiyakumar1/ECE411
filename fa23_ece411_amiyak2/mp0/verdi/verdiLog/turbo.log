@@ -1,0 +1,10 @@
+Command Line: /software/Synopsys-2021_x86_64/verdi/R-2020.12-SP1-1/platform/LINUXAMD64/bin/Novas -ssf /home/amiyak2/mp0/sim/dump.fsdb
+uname(Linux linux-ssh-02.ews.illinois.edu 4.18.0-477.13.1.el8_8.x86_64 #1 SMP Tue May 30 14:53:41 EDT 2023 x86_64)
+type= DS_SCOPE element= 1 field= 1
+VERILOG mp0_tb
+VERILOG mp0
+VERILOG rf
+-----
+second field= DebussyLib
+third field= regfile
+au time 135.704844 4.682997 1.439118 delta 315887616 315887616 total 809701376 809701376

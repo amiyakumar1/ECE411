@@ -1,0 +1,89 @@
+
+Warning-[LNX_OS_VERUN] Unsupported Linux version
+  Linux version 'AlmaLinux release 8.8 (Sapphire Caracal)' is not supported on
+  'x86_64' officially, assuming linux compatibility by default. Set 
+  VCS_ARCH_OVERRIDE to linux or suse32 to override.
+  Please refer to release notes for information on supported platforms.
+
+
+Warning-[LINX_KRNL] Unsupported Linux kernel
+  Linux kernel '4.18.0-477.13.1.el8_8.x86_64' is not supported.
+  Supported versions are 2.4* or 2.6*.
+
+Command: vcs -o grading /home/amiyak2/mp1/multiplier/pkg/design_types.sv /home/amiyak2/mp1/multiplier/pkg/grader_types.sv \
+/home/amiyak2/mp1/multiplier/hdl/multiplier_itf.sv /home/amiyak2/mp1/multiplier/hdl/add_shift_multiplier.sv \
+/home/amiyak2/mp1/multiplier/hvl/testbench.sv /home/amiyak2/mp1/multiplier/hvl/top.sv \
+/home/amiyak2/mp1/multiplier/grader/grader.sv /home/amiyak2/mp1/multiplier/grader/grader_itf.sv \
+/home/amiyak2/mp1/multiplier/grader/transaction_monitor.sv /home/amiyak2/mp1/multiplier/grader/transaction_scoreboard.sv \
+-full64 -sv=2012 +lint=all,noSVA-UA,noNS,noSVA-AECASR -timescale=1ns/10ps -debug_acc+all \
+-kdb -fsdb +v2k -l compile.log
+                         Chronologic VCS (TM)
+      Version R-2020.12-SP1-1_Full64 -- Thu Aug 31 23:09:01 2023
+
+                    Copyright (c) 1991 - 2021 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+
+Parsing design file '/home/amiyak2/mp1/multiplier/pkg/design_types.sv'
+Parsing design file '/home/amiyak2/mp1/multiplier/pkg/grader_types.sv'
+Parsing design file '/home/amiyak2/mp1/multiplier/hdl/multiplier_itf.sv'
+Parsing design file '/home/amiyak2/mp1/multiplier/hdl/add_shift_multiplier.sv'
+Parsing design file '/home/amiyak2/mp1/multiplier/hvl/testbench.sv'
+Parsing design file '/home/amiyak2/mp1/multiplier/hvl/top.sv'
+Parsing design file '/home/amiyak2/mp1/multiplier/grader/grader.sv'
+Parsing design file '/home/amiyak2/mp1/multiplier/grader/grader_itf.sv'
+Parsing design file '/home/amiyak2/mp1/multiplier/grader/transaction_monitor.sv'
+Parsing design file '/home/amiyak2/mp1/multiplier/grader/transaction_scoreboard.sv'
+Top Level Modules:
+       top
+TimeScale is 1 ns / 10 ps
+
+Lint-[ULCO] Unequal length in comparison operator
+/home/amiyak2/mp1/multiplier/hvl/testbench.sv, 102
+testbench, "(itf.product == (itf.multiplicand * itf.multiplier))"
+  A left 16-bit expression is compared to a right 8-bit expression.
+  Comparing 'itf.product' of type bit [15:0]
+  with '(itf.multiplicand * itf.multiplier)' of type bit [7:0].
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/amiyak2/mp1/multiplier/grader/grader.sv, 59
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 64-bit LHS target:
+  Source info: search_radius = 2;
+  Expression: search_radius
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/amiyak2/mp1/multiplier/grader/grader.sv, 64
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 64-bit LHS target:
+  Source info: i += 1;
+  Expression: i
+
+Notice: Ports coerced to inout, use -notice for details
+Starting vcs inline pass...
+
+6 modules and 0 UDP read.
+	However, due to incremental compilation, no re-compilation is necessary.
+make[1]: Entering directory '/home/amiyak2/mp1/multiplier/sim/csrc'
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared  -Bsymbolic --no-relax  -o .//../grading.daidir//_cuarc0.so objs/amcQw_d.o \
+
+rm -f _cuarc0.so
+if [ -x ../grading ]; then chmod a-x ../grading; fi
+g++  -o ../grading      -rdynamic  -Wl,-rpath='$ORIGIN'/grading.daidir -Wl,-rpath=./grading.daidir \
+-Wl,-rpath=/software/Synopsys-2021_x86_64/vcs/R-2020.12-SP1-1/linux64/lib -L/software/Synopsys-2021_x86_64/vcs/R-2020.12-SP1-1/linux64/lib \
+-Wl,-rpath-link=./  /usr/lib64/libnuma.so.1     _1867116_archive_1.so _prev_archive_1.so \
+_cuarc0.so  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o \
+rmar_llvm_0_0.o           -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile \
+-luclinative /software/Synopsys-2021_x86_64/vcs/R-2020.12-SP1-1/linux64/lib/vcs_tls.o \
+-Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive        _vcs_pli_stub_.o   \
+/software/Synopsys-2021_x86_64/vcs/R-2020.12-SP1-1/linux64/lib/vcs_save_restore_new.o \
+/software/Synopsys-2021_x86_64/verdi/R-2020.12-SP1-1/share/PLI/VCS/LINUX64/pli.a \
+-ldl  -lc -lm -lpthread -ldl 
+../grading up to date
+make[1]: Leaving directory '/home/amiyak2/mp1/multiplier/sim/csrc'
+CPU time: .561 seconds to compile + .372 seconds to elab + .411 seconds to link

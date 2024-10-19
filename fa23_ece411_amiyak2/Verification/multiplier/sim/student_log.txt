@@ -1,0 +1,10 @@
+[student_testbench] Passed 65536 of 65536 multiply operand covers
+[student_testbench] Passed 1 of 1 reset in ADD cover
+[student_testbench] Passed 1 of 1 reset in SHIFT cover
+[student_testbench] Passed 1 of 1 start in ADD cover
+[student_testbench] Passed 1 of 1 start in SHIFT cover
+[student_testbench] 0 False Positive BAD_PRODUCT Errors
+[student_testbench] 0 False Negative BAD_PRODUCT Errors
+[student_testbench] 0 False Positive NOT_READY Errors
+[student_testbench] 0 False Negative NOT_READY Errors
+[provided_dut] DUT passed verification

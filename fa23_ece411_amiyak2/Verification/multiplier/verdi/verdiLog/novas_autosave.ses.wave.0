@@ -1,0 +1,64 @@
+Magic 271485
+Revision Verdi_R-2020.12-SP1-1
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 25 1792 423 315 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/amiyak2/mp1/multiplier/sim/dump.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 21914977.787079 21969927.754364
+cursor 21934500.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 0
+; marker line index
+markerPos 10
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "tb"
+activeDirFile "" "/home/amiyak2/mp1/multiplier/sim/dump.fsdb"
+addSignal -h 15 /top/tb/itf/rdy
+addSignal -h 15 -holdScope product[15:0]
+addSignal -h 15 -holdScope reset_n
+addSignal -h 15 -UNSIGNED -holdScope mult_op[2:0]
+addSignal -h 15 -holdScope done
+addSignal -h 15 -holdScope multiplier[7:0]
+addSignal -h 15 -holdScope multiplicand[7:0]
+addSignal -h 15 -holdScope start
+addSignal -h 15 -holdScope clk
+addSignal -h 15 -holdScope timestamp[63:0]
+addGroup "G2"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+

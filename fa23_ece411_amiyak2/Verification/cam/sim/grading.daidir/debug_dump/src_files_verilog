@@ -1,0 +1,14 @@
+/home/amiyak2/mp1/cam/grader/cam_model.sv
+/home/amiyak2/mp1/cam/grader/grader.sv
+/home/amiyak2/mp1/cam/grader/grader_itf.sv
+/home/amiyak2/mp1/cam/grader/transaction_monitor.sv
+/home/amiyak2/mp1/cam/grader/transaction_scoreboard.sv
+/home/amiyak2/mp1/cam/hdl/cam.sv
+/home/amiyak2/mp1/cam/hdl/cam_controller.sv
+/home/amiyak2/mp1/cam/hdl/cam_datapath.sv
+/home/amiyak2/mp1/cam/hdl/cam_interface.sv
+/home/amiyak2/mp1/cam/hdl/cam_itf.sv
+/home/amiyak2/mp1/cam/hvl/testbench.sv
+/home/amiyak2/mp1/cam/hvl/top.sv
+/home/amiyak2/mp1/cam/pkg/design_types.sv
+/home/amiyak2/mp1/cam/pkg/grader_types.sv

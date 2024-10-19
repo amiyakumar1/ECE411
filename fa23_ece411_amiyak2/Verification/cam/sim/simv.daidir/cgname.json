@@ -1,0 +1,44 @@
+{
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        2
+    ],
+    "cam_types": [
+        "cam_types",
+        "Lh8zK",
+        "module",
+        3
+    ],
+    "grader_types": [
+        "grader_types",
+        "DEpSa",
+        "module",
+        4
+    ],
+    "cam_itf": [
+        "cam_itf",
+        "AjhGD",
+        "module",
+        5
+    ],
+    "CAMCtls": [
+        "CAMCtls",
+        "Vbc13",
+        "module",
+        6
+    ],
+    "top": [
+        "top",
+        "Emx8S",
+        "module",
+        7
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        10
+    ]
+}

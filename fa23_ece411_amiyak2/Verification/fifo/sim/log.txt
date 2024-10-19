@@ -1,0 +1,8 @@
+[student_testbench] Passed 256 of 256 enqueue covers
+[student_testbench] Passed 256 of 256 dequeue covers
+[student_testbench] Passed 255 of 255 both covers
+[student_testbench] 0 False Positive Reset Errors
+[student_testbench] 0 False Negative Reset Errors
+[student_testbench] 0 False Positive Data Errors
+[student_testbench] 0 False Negative Data Errors
+[provided_dut] DUT passed verification
